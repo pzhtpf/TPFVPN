@@ -1,0 +1,668 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1EA03B83278C041D00471713 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EA03B82278C041D00471713 /* AppDelegate.m */; };
+		1EA03B86278C041D00471713 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EA03B85278C041D00471713 /* SceneDelegate.m */; };
+		1EA03B89278C041D00471713 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EA03B88278C041D00471713 /* ViewController.m */; };
+		1EA03B8C278C041D00471713 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EA03B8A278C041D00471713 /* Main.storyboard */; };
+		1EA03B8E278C041E00471713 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EA03B8D278C041E00471713 /* Assets.xcassets */; };
+		1EA03B91278C041E00471713 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EA03B8F278C041E00471713 /* LaunchScreen.storyboard */; };
+		1EA03B94278C041E00471713 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EA03B93278C041E00471713 /* main.m */; };
+		1EA03B9E278C041E00471713 /* TPFVPNTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EA03B9D278C041E00471713 /* TPFVPNTests.m */; };
+		1EA03BA8278C041E00471713 /* TPFVPNUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EA03BA7278C041E00471713 /* TPFVPNUITests.m */; };
+		1EA03BAA278C041E00471713 /* TPFVPNUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EA03BA9278C041E00471713 /* TPFVPNUITestsLaunchTests.m */; };
+		1EA03BBE278C047D00471713 /* ca.cert.cer in Resources */ = {isa = PBXBuildFile; fileRef = 1EA03BB8278C047D00471713 /* ca.cert.cer */; };
+		1EA03BBF278C047D00471713 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA03BB9278C047D00471713 /* KeychainService.swift */; };
+		1EA03BC0278C047D00471713 /* VPNServerSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA03BBA278C047D00471713 /* VPNServerSettings.swift */; };
+		1EA03BC1278C047D00471713 /* TPFVPNManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EA03BBB278C047D00471713 /* TPFVPNManager.m */; };
+		1EA03BC2278C047D00471713 /* VPNIKEv2Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA03BBD278C047D00471713 /* VPNIKEv2Setup.swift */; };
+		1EA03BC4278C04B200471713 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA03BC3278C04B200471713 /* File.swift */; };
+		1EA03BC7278C04F800471713 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EA03BC6278C04F800471713 /* NetworkExtension.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1EA03B9A278C041E00471713 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1EA03B76278C041D00471713 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EA03B7D278C041D00471713;
+			remoteInfo = TPFVPN;
+		};
+		1EA03BA4278C041E00471713 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1EA03B76278C041D00471713 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EA03B7D278C041D00471713;
+			remoteInfo = TPFVPN;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1EA03B7E278C041D00471713 /* TPFVPN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TPFVPN.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EA03B81278C041D00471713 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1EA03B82278C041D00471713 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1EA03B84278C041D00471713 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		1EA03B85278C041D00471713 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		1EA03B87278C041D00471713 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1EA03B88278C041D00471713 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1EA03B8B278C041D00471713 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1EA03B8D278C041E00471713 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1EA03B90278C041E00471713 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1EA03B92278C041E00471713 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EA03B93278C041E00471713 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1EA03B99278C041E00471713 /* TPFVPNTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TPFVPNTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EA03B9D278C041E00471713 /* TPFVPNTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPFVPNTests.m; sourceTree = "<group>"; };
+		1EA03BA3278C041E00471713 /* TPFVPNUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TPFVPNUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EA03BA7278C041E00471713 /* TPFVPNUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPFVPNUITests.m; sourceTree = "<group>"; };
+		1EA03BA9278C041E00471713 /* TPFVPNUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPFVPNUITestsLaunchTests.m; sourceTree = "<group>"; };
+		1EA03BB7278C047D00471713 /* TPFVPNManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPFVPNManager.h; sourceTree = "<group>"; };
+		1EA03BB8278C047D00471713 /* ca.cert.cer */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ca.cert.cer; sourceTree = "<group>"; };
+		1EA03BB9278C047D00471713 /* KeychainService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		1EA03BBA278C047D00471713 /* VPNServerSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPNServerSettings.swift; sourceTree = "<group>"; };
+		1EA03BBB278C047D00471713 /* TPFVPNManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPFVPNManager.m; sourceTree = "<group>"; };
+		1EA03BBD278C047D00471713 /* VPNIKEv2Setup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPNIKEv2Setup.swift; sourceTree = "<group>"; };
+		1EA03BC3278C04B200471713 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		1EA03BC6278C04F800471713 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		1EA03BC8278C061200471713 /* TPFVPN-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TPFVPN-Bridging-Header.h"; sourceTree = "<group>"; };
+		1EA03BC9278C0F5700471713 /* TPFVPN.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TPFVPN.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1EA03B7B278C041D00471713 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EA03BC7278C04F800471713 /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EA03B96278C041E00471713 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EA03BA0278C041E00471713 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1EA03B75278C041D00471713 = {
+			isa = PBXGroup;
+			children = (
+				1EA03B80278C041D00471713 /* TPFVPN */,
+				1EA03B9C278C041E00471713 /* TPFVPNTests */,
+				1EA03BA6278C041E00471713 /* TPFVPNUITests */,
+				1EA03B7F278C041D00471713 /* Products */,
+				1EA03BC5278C04F800471713 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1EA03B7F278C041D00471713 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1EA03B7E278C041D00471713 /* TPFVPN.app */,
+				1EA03B99278C041E00471713 /* TPFVPNTests.xctest */,
+				1EA03BA3278C041E00471713 /* TPFVPNUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1EA03B80278C041D00471713 /* TPFVPN */ = {
+			isa = PBXGroup;
+			children = (
+				1EA03BC9278C0F5700471713 /* TPFVPN.entitlements */,
+				1EA03BB6278C047D00471713 /* VPNManager */,
+				1EA03B81278C041D00471713 /* AppDelegate.h */,
+				1EA03B82278C041D00471713 /* AppDelegate.m */,
+				1EA03B84278C041D00471713 /* SceneDelegate.h */,
+				1EA03B85278C041D00471713 /* SceneDelegate.m */,
+				1EA03B87278C041D00471713 /* ViewController.h */,
+				1EA03B88278C041D00471713 /* ViewController.m */,
+				1EA03B8A278C041D00471713 /* Main.storyboard */,
+				1EA03B8D278C041E00471713 /* Assets.xcassets */,
+				1EA03B8F278C041E00471713 /* LaunchScreen.storyboard */,
+				1EA03B92278C041E00471713 /* Info.plist */,
+				1EA03B93278C041E00471713 /* main.m */,
+				1EA03BC3278C04B200471713 /* File.swift */,
+				1EA03BC8278C061200471713 /* TPFVPN-Bridging-Header.h */,
+			);
+			path = TPFVPN;
+			sourceTree = "<group>";
+		};
+		1EA03B9C278C041E00471713 /* TPFVPNTests */ = {
+			isa = PBXGroup;
+			children = (
+				1EA03B9D278C041E00471713 /* TPFVPNTests.m */,
+			);
+			path = TPFVPNTests;
+			sourceTree = "<group>";
+		};
+		1EA03BA6278C041E00471713 /* TPFVPNUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1EA03BA7278C041E00471713 /* TPFVPNUITests.m */,
+				1EA03BA9278C041E00471713 /* TPFVPNUITestsLaunchTests.m */,
+			);
+			path = TPFVPNUITests;
+			sourceTree = "<group>";
+		};
+		1EA03BB6278C047D00471713 /* VPNManager */ = {
+			isa = PBXGroup;
+			children = (
+				1EA03BB8278C047D00471713 /* ca.cert.cer */,
+				1EA03BB9278C047D00471713 /* KeychainService.swift */,
+				1EA03BBA278C047D00471713 /* VPNServerSettings.swift */,
+				1EA03BBD278C047D00471713 /* VPNIKEv2Setup.swift */,
+				1EA03BB7278C047D00471713 /* TPFVPNManager.h */,
+				1EA03BBB278C047D00471713 /* TPFVPNManager.m */,
+			);
+			path = VPNManager;
+			sourceTree = "<group>";
+		};
+		1EA03BC5278C04F800471713 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1EA03BC6278C04F800471713 /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1EA03B7D278C041D00471713 /* TPFVPN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EA03BAD278C041E00471713 /* Build configuration list for PBXNativeTarget "TPFVPN" */;
+			buildPhases = (
+				1EA03B7A278C041D00471713 /* Sources */,
+				1EA03B7B278C041D00471713 /* Frameworks */,
+				1EA03B7C278C041D00471713 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TPFVPN;
+			productName = TPFVPN;
+			productReference = 1EA03B7E278C041D00471713 /* TPFVPN.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1EA03B98278C041E00471713 /* TPFVPNTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EA03BB0278C041E00471713 /* Build configuration list for PBXNativeTarget "TPFVPNTests" */;
+			buildPhases = (
+				1EA03B95278C041E00471713 /* Sources */,
+				1EA03B96278C041E00471713 /* Frameworks */,
+				1EA03B97278C041E00471713 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1EA03B9B278C041E00471713 /* PBXTargetDependency */,
+			);
+			name = TPFVPNTests;
+			productName = TPFVPNTests;
+			productReference = 1EA03B99278C041E00471713 /* TPFVPNTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1EA03BA2278C041E00471713 /* TPFVPNUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EA03BB3278C041E00471713 /* Build configuration list for PBXNativeTarget "TPFVPNUITests" */;
+			buildPhases = (
+				1EA03B9F278C041E00471713 /* Sources */,
+				1EA03BA0278C041E00471713 /* Frameworks */,
+				1EA03BA1278C041E00471713 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1EA03BA5278C041E00471713 /* PBXTargetDependency */,
+			);
+			name = TPFVPNUITests;
+			productName = TPFVPNUITests;
+			productReference = 1EA03BA3278C041E00471713 /* TPFVPNUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1EA03B76278C041D00471713 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					1EA03B7D278C041D00471713 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					1EA03B98278C041E00471713 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 1EA03B7D278C041D00471713;
+					};
+					1EA03BA2278C041E00471713 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 1EA03B7D278C041D00471713;
+					};
+				};
+			};
+			buildConfigurationList = 1EA03B79278C041D00471713 /* Build configuration list for PBXProject "TPFVPN" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1EA03B75278C041D00471713;
+			productRefGroup = 1EA03B7F278C041D00471713 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1EA03B7D278C041D00471713 /* TPFVPN */,
+				1EA03B98278C041E00471713 /* TPFVPNTests */,
+				1EA03BA2278C041E00471713 /* TPFVPNUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1EA03B7C278C041D00471713 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EA03B91278C041E00471713 /* LaunchScreen.storyboard in Resources */,
+				1EA03B8E278C041E00471713 /* Assets.xcassets in Resources */,
+				1EA03B8C278C041D00471713 /* Main.storyboard in Resources */,
+				1EA03BBE278C047D00471713 /* ca.cert.cer in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EA03B97278C041E00471713 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EA03BA1278C041E00471713 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1EA03B7A278C041D00471713 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EA03B89278C041D00471713 /* ViewController.m in Sources */,
+				1EA03B83278C041D00471713 /* AppDelegate.m in Sources */,
+				1EA03BC0278C047D00471713 /* VPNServerSettings.swift in Sources */,
+				1EA03B94278C041E00471713 /* main.m in Sources */,
+				1EA03BC2278C047D00471713 /* VPNIKEv2Setup.swift in Sources */,
+				1EA03BBF278C047D00471713 /* KeychainService.swift in Sources */,
+				1EA03BC1278C047D00471713 /* TPFVPNManager.m in Sources */,
+				1EA03BC4278C04B200471713 /* File.swift in Sources */,
+				1EA03B86278C041D00471713 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EA03B95278C041E00471713 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EA03B9E278C041E00471713 /* TPFVPNTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EA03B9F278C041E00471713 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EA03BAA278C041E00471713 /* TPFVPNUITestsLaunchTests.m in Sources */,
+				1EA03BA8278C041E00471713 /* TPFVPNUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1EA03B9B278C041E00471713 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1EA03B7D278C041D00471713 /* TPFVPN */;
+			targetProxy = 1EA03B9A278C041E00471713 /* PBXContainerItemProxy */;
+		};
+		1EA03BA5278C041E00471713 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1EA03B7D278C041D00471713 /* TPFVPN */;
+			targetProxy = 1EA03BA4278C041E00471713 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1EA03B8A278C041D00471713 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1EA03B8B278C041D00471713 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1EA03B8F278C041E00471713 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1EA03B90278C041E00471713 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1EA03BAB278C041E00471713 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1EA03BAC278C041E00471713 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1EA03BAE278C041E00471713 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TPFVPN/TPFVPN.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 636MA7QTYY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TPFVPN/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.funplus.studydemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "TPFVPN/TPFVPN-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1EA03BAF278C041E00471713 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TPFVPN/TPFVPN.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 636MA7QTYY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TPFVPN/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.funplus.studydemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "TPFVPN/TPFVPN-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1EA03BB1278C041E00471713 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 636MA7QTYY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aimiDragon.app.TPFVPNTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TPFVPN.app/TPFVPN";
+			};
+			name = Debug;
+		};
+		1EA03BB2278C041E00471713 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 636MA7QTYY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aimiDragon.app.TPFVPNTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TPFVPN.app/TPFVPN";
+			};
+			name = Release;
+		};
+		1EA03BB4278C041E00471713 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 636MA7QTYY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aimiDragon.app.TPFVPNUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TPFVPN;
+			};
+			name = Debug;
+		};
+		1EA03BB5278C041E00471713 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 636MA7QTYY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aimiDragon.app.TPFVPNUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TPFVPN;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1EA03B79278C041D00471713 /* Build configuration list for PBXProject "TPFVPN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EA03BAB278C041E00471713 /* Debug */,
+				1EA03BAC278C041E00471713 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EA03BAD278C041E00471713 /* Build configuration list for PBXNativeTarget "TPFVPN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EA03BAE278C041E00471713 /* Debug */,
+				1EA03BAF278C041E00471713 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EA03BB0278C041E00471713 /* Build configuration list for PBXNativeTarget "TPFVPNTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EA03BB1278C041E00471713 /* Debug */,
+				1EA03BB2278C041E00471713 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EA03BB3278C041E00471713 /* Build configuration list for PBXNativeTarget "TPFVPNUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EA03BB4278C041E00471713 /* Debug */,
+				1EA03BB5278C041E00471713 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1EA03B76278C041D00471713 /* Project object */;
+}
