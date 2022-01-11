@@ -64,7 +64,7 @@ vmess://ewoidiI6ICIyIiwKInBzIjogImlwXzQ1LjYyLjEwMC4xNzYiLAoiYWRkIjogIjQ1LjYyLjEw
 [https://quericy.me/blog/699/](https://quericy.me/blog/699/)
 
 一键安装，有需要输入的，使用默认值即可。
-建议关闭防火墙，不忍可能导致无法访问。
+建议关闭防火墙，不然可能导致无法访问。
 如果购买的搬瓦工的VPS服务器，VPS类型选择KVM。
 建议使用本地终端，用SSH命令链接VPS服务器, 去执行安装脚本，
 
@@ -89,6 +89,7 @@ vmess://ewoidiI6ICIyIiwKInBzIjogImlwXzQ1LjYyLjEwMC4xNzYiLAoiYWRkIjogIjQ1LjYyLjEw
 
 #####  在iOS手机的设置-VPN-添加VPN配置
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/0355262865c441fab3148d76d5cf830e.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAcHpodHBm,size_20,color_FFFFFF,t_70,g_se,x_16)
+
 然后打开连接，可以测试服务有没有搭建成功。这里一定要保证VPN搭建成功，并可用。确保服务端没问题，后续我们就可以集中精力去开发iOS客户端。
 
 > 如果你只是想搭建Mac端或者iOS端的 virtual private network，后续内容可以不必看。但是你是一个iOS开发者，想开发一款VPN软件，那么则继续往下阅读。
@@ -287,7 +288,7 @@ gitee(国内仓库打开会快一点):[https://gitee.com/Roc.Tian/tpfvpn](https:
 
 #####  3. iOS 14，iOS 15 可以正常连接，iOS 13， iOS 12以及更低版本无法连接。 
 
-> **操作**：使用了IKESecurityAssociationParameters.diffieHellmanGroup的默认值。
+> **操作**：使用了IKESecurityAssociationParameters.diffieHellmanGroup的默认值。  
 > **解决方案**：diffieHellmanGroup的默认值为NEVPNIKEv2DiffieHellmanGroup2，但iOS 14.2以后版本的默认值更改成了NEVPNIKEv2DiffieHellmanGroup14。    
 > 请参考：[https://developer.apple.com/documentation/devicemanagement/vpn/ikev2/ikesecurityassociationparameters](https://developer.apple.com/documentation/devicemanagement/vpn/ikev2/ikesecurityassociationparameters)
 > Diffie-Hellman密钥交换算法，服务器可能支持的是NEVPNIKEv2DiffieHellmanGroup14(猜测)，但iOS 13以下的版本默认为NEVPNIKEv2DiffieHellmanGroup2，导致两端密钥交换算法不一致，所以无法建立连接。
