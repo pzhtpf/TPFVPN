@@ -271,8 +271,8 @@ vmess://ewoidiI6ICIyIiwKInBzIjogImlwXzQ1LjYyLjEwMC4xNzYiLAoiYWRkIjogIjQ1LjYyLjEw
 
  
 
-以上贴了一下关键代码，全部源码(包含Swift版本)请移步：
-
+以上贴了一下关键代码，全部源码(包含Swift版本)请移步：  
+gitee(国内仓库打开会快一点):[https://gitee.com/Roc.Tian/tpfvpn](https://gitee.com/Roc.Tian/tpfvpn)
 
 ####  踩坑记录
 #####  1. 用户授权失败
@@ -287,9 +287,9 @@ vmess://ewoidiI6ICIyIiwKInBzIjogImlwXzQ1LjYyLjEwMC4xNzYiLAoiYWRkIjogIjQ1LjYyLjEw
 
 #####  3. iOS 14，iOS 15 可以正常连接，iOS 13， iOS 12以及更低版本无法连接。 
 
-> **操作**：使用了IKESecurityAssociationParameters.diffieHellmanGroup的默认值。  
-> **解决方案**：diffieHellmanGroup的默认值为NEVPNIKEv2DiffieHellmanGroup2，但iOS 14.2以后版本的默认值更改成了NEVPNIKEv2DiffieHellmanGroup14。
+> **操作**：使用了IKESecurityAssociationParameters.diffieHellmanGroup的默认值。
+> **解决方案**：diffieHellmanGroup的默认值为NEVPNIKEv2DiffieHellmanGroup2，但iOS 14.2以后版本的默认值更改成了NEVPNIKEv2DiffieHellmanGroup14。    
+> 请参考：[https://developer.apple.com/documentation/devicemanagement/vpn/ikev2/ikesecurityassociationparameters](https://developer.apple.com/documentation/devicemanagement/vpn/ikev2/ikesecurityassociationparameters)
 > Diffie-Hellman密钥交换算法，服务器可能支持的是NEVPNIKEv2DiffieHellmanGroup14(猜测)，但iOS 13以下的版本默认为NEVPNIKEv2DiffieHellmanGroup2，导致两端密钥交换算法不一致，所以无法建立连接。
 > 所以需要我们显示的指定密钥交换算法：
 >             config.IKESecurityAssociationParameters.diffieHellmanGroup = NEVPNIKEv2DiffieHellmanGroup14;
-
